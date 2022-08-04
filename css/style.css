@@ -20,11 +20,11 @@ nav {
 }
 
 /* Home */
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
+#home {
+  height: 600px;
 }
-.carousel-caption {
+
+/* .carousel-caption {
   bottom: 220px;
   z-index: 2;
 }
@@ -49,4 +49,4 @@ nav {
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
-}
+} */
