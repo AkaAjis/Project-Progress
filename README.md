@@ -1,2 +1,2 @@
-# Si-KONCOL-2
-boostrap
+# Project Progress
+Deadline 25 Agust
