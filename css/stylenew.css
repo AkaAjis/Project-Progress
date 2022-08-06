@@ -74,22 +74,31 @@ nav {
     border-radius: 50px;
 }
 
+/* Contact */
+#contact {
+    background-color: cadetblue;
+}
+
+.form-contact {
+    width: 500px;
+    height: 420px;
+    background-color: #fff;
+}
 /* Footer */
-.footer {
+#footer {
     background-color: var(--secondarycolor);
     border-radius: 20px 20px 0px 0px;
-    margin-top: 100px !important;
 }
-.footer .logo {
+#footer .logo {
     width: 180px;
     height: 180px;
 }
-.footer .footer-brand {
+#footer #footer-brand {
     color: #fff;
     font-family: var(--headingFont);
     font-weight: 900;
 }
-.footer .footer-brand span {
+#footer #footer-brand span {
     color: var(--secondaryColor);
 }
 .col1 a {
