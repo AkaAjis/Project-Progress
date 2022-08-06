@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
@@ -11,10 +11,16 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <!-- Box Icon -->
         <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
         <!-- My CSS -->
-        <link rel="stylesheet" href="css/stylenew.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Icon -->
+        <link rel="shortcut icon" href="img/logo_new_progress.png" />
         <!-- Title -->
         <title>PROGRESS</title>
     </head>
@@ -24,7 +30,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container container-headfoot">
                 <a class="navbar-brand fw-bold fs-2 w-25" href="index.html">
-                    <img src="img/progress.png" class="logo" alt="" />
+                    <img src="img/logo_new_progress.png" class="logo" alt="" />
                 </a>
                 <button
                     class="navbar-toggler"
@@ -40,18 +46,16 @@
                 <div class="collapse navbar-collapse text-center w-50" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto fs-5 fw-bold">
                         <li class="nav-item mx-3">
-                            <a class="nav-link active fw-bolder" aria-current="page" href="#"
-                                >Home</a
-                            >
+                            <a class="nav-link active fw-bolder" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Class</a>
+                            <a class="nav-link mx-3" href="class.html">Class</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">About Us</a>
+                            <a class="nav-link mx-3" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">Contact</a>
+                            <a class="nav-link mx-3"  href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -124,7 +128,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="text-center text-white mb-5">Berita Terbaru</h1>
+                        <h1 class="text-center h-head">Berita Terbaru</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -168,7 +172,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="text-center text-white mb-5">Event</h1>
+                        <h1 class="text-center h-head">Event</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -181,11 +185,11 @@
                                     vulputate libero et velit interdum, ac aliquet odio mattis.
                                     Class aptent taciti sociosqu ad litora torquent per conubia
                                     nostra, per inceptos himenaeos. Curabitur tempus urna at turpis
-                                    condimentum lobortis. Ut commodo efficitur neque.
+                                    condimentum lobortis. Ut commodo efficitur neque. <br>
+                                    <a href="" class="">
+                                        <button class="btn">Read More...</button>
+                                    </a>
                                 </p>
-                                <a href="" class="mx-3">
-                                    <button class="btn">Read More...</button>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -283,29 +287,33 @@
         <footer id="footer">
             <div class="container pt-5">
                 <div class="row mb-5">
-                    <div class="col-lg-4 col-md-6 col1">
-                        <img src="img/progress.png" class="logo" alt="" />
-                        <!-- <div class="icon-footer mt-3">
-                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                            <a href="#"><i class='bx bxl-instagram-alt mx-2'></i></a>
-                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                        </div> -->
+                    <div class="col-lg-5 col-md-3 col5 mt-4 mt-lg-0">
+                        <h3>PROGRAMMING  OF ITB STIKOM BALI </h3>
+                        <p class="text-white">
+                            Jl. Raya Puputan No. 36, Dangin Puri Kelod, <br> 
+                            Kecamatan Denpasar Tim, Kota
+                            Denpasar, Bali <br>
+                            Phone +6282345678911
+                        </p>
+                        <a href="https://goo.gl/maps/tVwviZpErjoFcRz67" target="_blank"
+                            >Google Maps</a
+                        >
                     </div>
-                    <div class="col-lg-2 col-md-3 col2 mt-4 mt-md-0">
-                        <h3>Services</h3>
+                    <div class="col-lg-2 g-1 col-md-3 col2 mt-4 mt-md-0">
+                        <h3>Sosial Media</h3>
                         <ul class="ps-0">
-                            <li><a href="#">House Plant</a></li>
-                            <li><a href="#">Garden Plant</a></li>
-                            <li><a href="#">Vase</a></li>
-                            <li><a href="#">Fertilizer</a></li>
+                            <li><a href="#"><i class="bx bxl-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="bx bxl-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="bx bxl-youtube"></i> Youtube</a></li>
+                            <li><a href="#"><i class="bx bxl-twitter"></i> Twitter</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-3 col3 mt-4 mt-md-0">
-                        <h3>Information</h3>
+                    <div class="col-lg-2  col-md-3 col2 mt-4 mt-md-0">
+                        <h3>Informasi</h3>
                         <ul class="ps-0">
-                            <li><a href="#">Office Hours</a></li>
-                            <li><a href="#">Requirements</a></li>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Kelas Rutin</a></li>
+                            <li><a href="#">Pengumuman</a></li>
+                            <li><a href="#">Event</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-3 col4 mt-4 mt-lg-0">
@@ -316,16 +324,6 @@
                             <li><a href="#">Terms & Condition</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col5 mt-4 mt-lg-0">
-                        <h3>Address</h3>
-                        <p class="text-white">
-                            Jl. Raya Puputan No. 36, Dangin Puri Kelod, Kecamatan Denpasar Tim, Kota
-                            Denpasar, Bali
-                        </p>
-                        <a href="https://goo.gl/maps/tVwviZpErjoFcRz67" target="_blank"
-                            >Google Maps</a
-                        >
                     </div>
                 </div>
                 <hr class="text-white" />

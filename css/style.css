@@ -1,3 +1,4 @@
+@import url(support.css);
 :root {
     /* color */
     /* --primarycolor: #126e82;
@@ -20,7 +21,8 @@ html{
 body {
     margin: 0;
     padding: 0;
-}
+    background-color: var(--bg-three);
+} 
 
 /* Navbar Start */
 nav {
@@ -28,7 +30,6 @@ nav {
     font-family: var(--headingFont);
 }
 .navbar-brand .logo {
-    width: 70px;
     height: 60px;
 }
 /* Navbar End */
@@ -47,16 +48,9 @@ h1{
 }
 /* Homepage End */
 
-
-.section-padding {
-    padding: 100px 0px;
-}
-.btn-home {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+/* Berita Terbaru CSS Start */
+#news{
+    background-color: var(--bg-three);
 }
 #news p button{
     font-family: var(--bg-four);
@@ -76,10 +70,14 @@ h1{
     transition: all 0.5s ease-in-out;
     z-index: 1;
 }
+/* Berita Terbaru CSS End */
 
-/* Event */
+/* Event Start */
+#event{
+    background-color: var(--bg-two);
+}
 .img-event {
-    scale: 90%;
+    scale: 50%;
     background-color: #d8e3e7;
     width: 348px;
     height: 538px;
@@ -95,27 +93,30 @@ h1{
     z-index: 3;
 }
 .border-event {
+    scale: 100%;
     border: 2px solid #ffffff;
     border-radius: 50px;
 }
+/* Event End */
 
-/* Contact */
+/* Contact Start */
 #contact {
-    background-color: cadetblue;
-}
+    background-color: var(--bg-three);
 
+}
 .form-contact {
     width: 500px;
     height: 420px;
     background-color: #fff;
 }
+/* Contact End */
+
 /* Footer */
 #footer {
-    background-color: var(--secondarycolor);
+    background-color: var(--bg-master);
     border-radius: 20px 20px 0px 0px;
 }
 #footer .logo {
-    width: 180px;
     height: 170px;
 }
 #footer #footer-brand {
@@ -136,6 +137,7 @@ h1{
 footer a {
     text-decoration: none;
 }
+
 .col2 h3,
 .col3 h3,
 .col4 h3,
@@ -157,18 +159,4 @@ footer a {
 .col4 a {
     color: #fff;
 }
-
-/* Text */
-.h-head {
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin: 0px 0px 40px 0px;
-}
-
-
-/* Berita Terbaru CSS Start */
-#news{
-    background-color: var(--bg-three);
-}
-/* Berita Terbaru CSS End */
+/* Footer End */
