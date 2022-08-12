@@ -81,7 +81,7 @@ h1 {
 
 /* Event Start */
 #event {
-    background-color: var(--bg-two);
+    background-color: var(--bg-master);
 }
 
 .img-event {
