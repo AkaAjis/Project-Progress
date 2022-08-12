@@ -1,162 +1,181 @@
 @import url(support.css);
 :root {
-    /* color */
-    /* --primarycolor: #126e82;
+  /* color */
+  /* --primarycolor: #126e82;
     --secondarycolor: #132c33;
     --anothercolor: #d8e3e7; */
 
-    /* bg color */
-    --bg-master: #132C33;
-    --bg-two: #126E82;
-    --bg-three: #368b96;
-    --bg-four: #D8E3E7;
+  /* bg color */
+  --bg-master: #132c33;
+  --bg-two: #126e82;
+  --bg-three: #368b96;
+  --bg-four: #d8e3e7;
 
-    /* font */
-    --mainFont: 'Open Sans', sans-serif;
-    --headingFont: 'Merriweather', serif;
+  /* font */
+  --mainFont: 'Open Sans', sans-serif;
+  --headingFont: 'Merriweather', serif;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-three);
-} 
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-three);
+}
 
 /* Navbar Start */
 nav {
-    background-color: var(--bg-master);
-    font-family: var(--headingFont);
+  background-color: var(--bg-master);
+  font-family: var(--headingFont);
 }
 .navbar-brand .logo {
-    height: 60px;
+  height: 60px;
 }
 /* Navbar End */
 
 /* Homepage Start */
 #home {
-    background-image: url(../img/Home\ 1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 757px;
+  background-image: url(../img/Home\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 757px;
 }
-h1{
-    font-family: var(--headingFont);
+h1 {
+  font-family: var(--headingFont);
 }
 /* Homepage End */
 
 /* Berita Terbaru CSS Start */
-#news{
-    background-color: var(--bg-three);
+#news {
+  background-color: var(--bg-three);
 }
-#news p button{
-    font-family: var(--bg-four);
-    font-size: 18px;
+#news p button {
+  font-family: var(--bg-four);
+  font-size: 18px;
 }
 .img-news {
-    background-color: #d8e3e7;
-    width: 521px;
-    height: 561px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    overflow: hidden;
+  background-color: #d8e3e7;
+  width: 521px;
+  height: 561px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  overflow: hidden;
 }
 .img-news img {
-    /* scale: 100%; */
-    /* border-radius: 30px 30px 0 0; */
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
+  /* scale: 100%; */
+  /* border-radius: 30px 30px 0 0; */
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 /* Berita Terbaru CSS End */
 
 /* Event Start */
-#event{
-    background-color: var(--bg-two);
+#event {
+  background-color: var(--bg-two);
 }
 .img-event {
-    scale: 50%;
-    background-color: #d8e3e7;
-    width: 348px;
-    height: 538px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    overflow: hidden;
-    z-index: 1;
+  scale: 50%;
+  background-color: #d8e3e7;
+  width: 348px;
+  height: 538px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
 }
 .img-event img {
-    /* scale: 100%; */
-    /* border-radius: 30px 30px 0 0; */
-    transition: all 0.5s ease-in-out;
-    z-index: 3;
+  /* scale: 100%; */
+  /* border-radius: 30px 30px 0 0; */
+  transition: all 0.5s ease-in-out;
+  z-index: 3;
 }
 .border-event {
-    scale: 100%;
-    border: 2px solid #ffffff;
-    border-radius: 50px;
+  scale: 100%;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
 }
 /* Event End */
 
 /* Contact Start */
 #contact {
-    background-color: var(--bg-three);
-
+  background-color: var(--bg-three);
 }
 .form-contact {
-    width: 500px;
-    height: 420px;
-    background-color: #fff;
+  width: 500px;
+  height: 420px;
+  background-color: #fff;
 }
 /* Contact End */
 
 /* Footer */
 #footer {
-    background-color: var(--bg-master);
-    border-radius: 20px 20px 0px 0px;
+  background-color: var(--bg-master);
+  border-radius: 20px 20px 0px 0px;
 }
 #footer .logo {
-    height: 170px;
+  height: 170px;
 }
 #footer #footer-brand {
-    color: #fff;
-    font-family: var(--headingFont);
-    font-weight: 900;
+  color: #fff;
+  font-family: var(--headingFont);
+  font-weight: 900;
 }
 #footer #footer-brand span {
-    color: var(--secondaryColor);
+  color: var(--secondaryColor);
 }
 .col1 a {
-    color: #fff;
+  color: #fff;
 }
 .icon-footer i {
-    font-size: 2rem;
-    color: var(--secondaryColor);
+  font-size: 2rem;
+  color: var(--secondaryColor);
 }
 footer a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .col2 h3,
 .col3 h3,
 .col4 h3,
 .col5 h3 {
-    color: #fff;
-    margin-bottom: 20px;
-    font-family: var(--headingFont);
-    font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: var(--headingFont);
+  font-weight: 700;
 }
 .col2 ul li,
 .col3 ul li,
 .col4 ul li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .col2 a,
 .col3 a,
 .col4 a {
-    color: #fff;
+  color: #fff;
 }
 /* Footer End */
+
+/* Kelas */
+.classprogress {
+  margin-bottom: 100px;
+}
+.btn-secondary {
+  color: #000;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  border-color: #ffffff;
+  font-weight: 500;
+}
+.btn:hover {
+  color: #383838;
+  background-color: #ffffff;
+  border-color: #6c757d;
+  border-radius: 50px;
+  font-weight: 500;
+}
+/* Kelas End */
