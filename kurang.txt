@@ -1,3 +1,0 @@
-warna bg
-outline foto event
-form section belum jadi 

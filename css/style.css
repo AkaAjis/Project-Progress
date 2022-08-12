@@ -1,181 +1,478 @@
-@import url(support.css);
 :root {
-  /* color */
-  /* --primarycolor: #126e82;
+    /* color */
+    /* --primarycolor: #126e82;
     --secondarycolor: #132c33;
     --anothercolor: #d8e3e7; */
 
-  /* bg color */
-  --bg-master: #132c33;
-  --bg-two: #126e82;
-  --bg-three: #368b96;
-  --bg-four: #d8e3e7;
+    /* bg color */
+    --bg-master: #132C33;
+    --bg-two: #126E82;
+    --bg-three: #368b96;
+    --bg-four: #D8E3E7;
 
-  /* font */
-  --mainFont: 'Open Sans', sans-serif;
-  --headingFont: 'Merriweather', serif;
+    /* font */
+    --mainFont: 'Open Sans', sans-serif;
+    --headingFont: 'Merriweather', serif;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-three);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-three);
 }
 
 /* Navbar Start */
 nav {
-  background-color: var(--bg-master);
-  font-family: var(--headingFont);
+    background-color: var(--bg-master);
+    font-family: var(--headingFont);
 }
+
 .navbar-brand .logo {
-  height: 60px;
+    height: 60px;
 }
+
 /* Navbar End */
 
 /* Homepage Start */
 #home {
-  background-image: url(../img/Home\ 1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 757px;
+    background-image: url(../img/Home\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 757px;
 }
+
 h1 {
-  font-family: var(--headingFont);
+    font-family: var(--headingFont);
 }
 /* Homepage End */
 
-/* Berita Terbaru CSS Start */
+/* News Start */
 #news {
-  background-color: var(--bg-three);
+    background-color: var(--bg-three);
 }
+
 #news p button {
-  font-family: var(--bg-four);
-  font-size: 18px;
+    font-family: var(--bg-four);
+    font-size: 18px;
 }
+
 .img-news {
-  background-color: #d8e3e7;
-  width: 521px;
-  height: 561px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  overflow: hidden;
+    background-color: #d8e3e7;
+    width: 521px;
+    height: 561px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    overflow: hidden;
 }
+
 .img-news img {
-  /* scale: 100%; */
-  /* border-radius: 30px 30px 0 0; */
-  transition: all 0.5s ease-in-out;
-  z-index: 1;
+    /* scale: 100%; */
+    /* border-radius: 30px 30px 0 0; */
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
 }
-/* Berita Terbaru CSS End */
+/* News End */
 
 /* Event Start */
 #event {
-  background-color: var(--bg-two);
+    background-color: var(--bg-two);
 }
+
 .img-event {
-  scale: 50%;
-  background-color: #d8e3e7;
-  width: 348px;
-  height: 538px;
-  box-sizing: border-box;
-  border-radius: 30px;
-  overflow: hidden;
-  z-index: 1;
+    scale: 90%;
+    background-color: #d8e3e7;
+    width: 348px;
+    height: 538px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 1;
 }
+
 .img-event img {
-  /* scale: 100%; */
-  /* border-radius: 30px 30px 0 0; */
-  transition: all 0.5s ease-in-out;
-  z-index: 3;
+    /* scale: 100%; */
+    /* border-radius: 30px 30px 0 0; */
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
 }
+
 .border-event {
-  scale: 100%;
-  border: 2px solid #ffffff;
-  border-radius: 50px;
+    scale: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
 }
 /* Event End */
 
 /* Contact Start */
 #contact {
-  background-color: var(--bg-three);
+    background-color: var(--bg-three);
+
 }
+
 .form-contact {
-  width: 500px;
-  height: 420px;
-  background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    width: 500px;
+    border-radius: 30px;
+   /* height: 420px; */
+    background-color: #fff;
 }
+
 /* Contact End */
 
 /* Footer */
 #footer {
-  background-color: var(--bg-master);
-  border-radius: 20px 20px 0px 0px;
+    background-color: var(--bg-master);
+    border-radius: 20px 20px 0px 0px;
 }
+
 #footer .logo {
-  height: 170px;
+    height: 170px;
 }
+
 #footer #footer-brand {
-  color: #fff;
-  font-family: var(--headingFont);
-  font-weight: 900;
+    color: #fff;
+    font-family: var(--headingFont);
+    font-weight: 900;
 }
+
 #footer #footer-brand span {
-  color: var(--secondaryColor);
+    color: var(--secondaryColor);
 }
+
 .col1 a {
-  color: #fff;
+    color: #fff;
 }
+
 .icon-footer i {
-  font-size: 2rem;
-  color: var(--secondaryColor);
+    font-size: 2rem;
+    color: var(--secondaryColor);
 }
+
 footer a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .col2 h3,
 .col3 h3,
 .col4 h3,
 .col5 h3 {
-  color: #fff;
-  margin-bottom: 20px;
-  font-family: var(--headingFont);
-  font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: var(--headingFont);
+    font-weight: 700;
 }
+
 .col2 ul li,
 .col3 ul li,
 .col4 ul li {
-  list-style: none;
-  margin: 10px 0;
+    list-style: none;
+    margin: 10px 0;
 }
 
 .col2 a,
 .col3 a,
 .col4 a {
-  color: #fff;
+    color: #fff;
 }
+
 /* Footer End */
 
-/* Kelas */
-.classprogress {
-  margin-bottom: 100px;
+/* Sejarah Start */
+.sejarah {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--bg-four);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
 }
-.btn-secondary {
-  color: #000;
-  background-color: #d9d9d9;
-  border-radius: 50px;
-  border-color: #ffffff;
-  font-weight: 500;
+
+.sejarah-teks {
+    width: 60%;
+    height: auto;
+    margin-right: 1%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
 }
-.btn:hover {
-  color: #383838;
-  background-color: #ffffff;
-  border-color: #6c757d;
-  border-radius: 50px;
-  font-weight: 500;
+
+.sejarah-teks .teks1 {
+    font-size: 20px;
+
 }
-/* Kelas End */
+
+.sejarah-teks .teks2 {
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+.sejarah-gambar {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sejarah-gambar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Sejarah End */
+
+/* Visi & Misi Start */
+.visimisi {
+    width: 94%;
+    height: auto;
+    margin: 10% 3%;
+    display: flex;
+    font-family: var(--mainFont);
+}
+
+.vm {
+    width: 40%;
+    height: auto;
+    padding: 50px;
+    margin: 0% 5%;
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--bg-four);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.vm .vm1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.vm li {
+    margin-bottom: 10px;
+    text-align: justify;
+    list-style-type: square;
+}
+
+/* Visi & Misi End */
+
+/* Struktur Start */
+.organisasi {
+    height: 70px;
+    padding: 20px;
+    margin: 5% 35%;
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--mainFont);
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--bg-four);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.struktur {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 20%;
+    margin: 0% 5%;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.profile:hover {
+    box-shadow: 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-txt {
+    text-align: center;
+    padding: 10px 16px;
+    background-color: var(--bg-four);
+}
+
+/* Struktur End */
+
+.btn-contact {
+    height: 60px;
+    border: none;
+    color: #d8e3e7;
+    background-color: #132C33;
+    
+    /* font */
+    font-size: 1.3em;
+    font-weight: 700;
+
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px 0px 30px 30px;
+}
+.btn-contact:hover{
+    background-color: #395a62;
+    /* border-radius: 30px 0 0 0; */
+}.col3 a,
+.col4 a {
+    color: #fff;
+}
+
+/* Footer End */
+
+/* Sejarah Start */
+.sejarah {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--bg-four);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.sejarah-teks {
+    width: 60%;
+    height: auto;
+    margin-right: 1%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+}
+
+.sejarah-teks .teks1 {
+    font-size: 20px;
+
+}
+
+.sejarah-teks .teks2 {
+    font-size: 14px;
+    text-align: justify;
+
+}
+
+.sejarah-gambar {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.sejarah-gambar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Sejarah End */
+
+/* Visi & Misi Start */
+.visimisi {
+    width: 94%;
+    height: auto;
+    margin: 10% 3%;
+    display: flex;
+    font-family: var(--mainFont);
+}
+
+.vm {
+    width: 40%;
+    height: auto;
+    padding: 50px;
+    margin: 0% 5%;
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--bg-four);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.vm .vm1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.vm li {
+    margin-bottom: 10px;
+    text-align: justify;
+    list-style-type: square;
+}
+
+/* Visi & Misi End */
+
+/* Struktur Start */
+.organisasi {
+    height: 70px;
+    padding: 20px;
+    margin: 5% 35%;
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--mainFont);
+    border-radius: 5px 5px 5px 5px;
+    background-color: var(--bg-four);
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.struktur {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 20%;
+    margin: 0% 5%;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.profile:hover {
+    box-shadow: 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-txt {
+    text-align: center;
+    padding: 10px 16px;
+    background-color: var(--bg-four);
+}
+
+/* Struktur End */
+
+.btn-contact {
+    height: 60px;
+    border: none;
+    color: #d8e3e7;
+    background-color: #132C33;
+    
+    /* font */
+    font-size: 1.3em;
+    font-weight: 700;
+
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px 0px 30px 30px;
+}
+.btn-contact:hover{
+    background-color: #395a62;
+    /* border-radius: 30px 0 0 0; */
+}
+
+/* Text */
+.section-padding {
+    padding: 100px 0px;
+}
+.btn-home {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+.h-head {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0px 0px 40px 0px;
+}
