@@ -1,9 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
-    /* color */
-    /* --primarycolor: #126e82;
-    --secondarycolor: #132c33;
-    --anothercolor: #d8e3e7; */
-
     /* bg color */
     --bg-master: #132C33;
     --bg-two: #126E82;
@@ -11,8 +7,9 @@
     --bg-four: #D8E3E7;
 
     /* font */
-    --mainFont: 'Open Sans', sans-serif;
     --headingFont: 'Merriweather', serif;
+    --bodyFont: 'Inter', sans-serif;
+
 }
 
 html {
@@ -29,12 +26,12 @@ body {
 nav {
     background-color: var(--bg-master);
     font-family: var(--headingFont);
+    letter-spacing: 2px;
 }
 
 .navbar-brand .logo {
     height: 60px;
 }
-
 /* Navbar End */
 
 /* Homepage Start */
@@ -120,10 +117,8 @@ h1 {
     padding: 0;
     width: 500px;
     border-radius: 30px;
-   /* height: 420px; */
     background-color: #fff;
 }
-
 /* Contact End */
 
 /* Footer */
@@ -142,17 +137,8 @@ h1 {
     font-weight: 900;
 }
 
-#footer #footer-brand span {
-    color: var(--secondaryColor);
-}
-
 .col1 a {
     color: #fff;
-}
-
-.icon-footer i {
-    font-size: 2rem;
-    color: var(--secondaryColor);
 }
 
 footer a {
@@ -181,7 +167,6 @@ footer a {
 .col4 a {
     color: #fff;
 }
-
 /* Footer End */
 
 /* Sejarah Start */
@@ -202,7 +187,7 @@ footer a {
     margin-right: 1%;
     padding: 50px 20px;
     box-sizing: border-box;
-    font-family: var(--mainFont);
+    font-family: var(--bodyFont);
 }
 
 .sejarah-teks .teks1 {
@@ -228,7 +213,6 @@ footer a {
     height: 100%;
     border-radius: 10px 10px 10px 10px;
 }
-
 /* Sejarah End */
 
 /* Visi & Misi Start */
@@ -237,14 +221,14 @@ footer a {
     height: auto;
     margin: 10% 3%;
     display: flex;
-    font-family: var(--mainFont);
+    font-family: var(--bodyFont);
 }
 
 .vm {
     width: 40%;
     height: auto;
     padding: 50px;
-    margin: 0% 5%;
+    margin: 0% 0%;
     border-radius: 5px 5px 5px 5px;
     background-color: var(--bg-four);
     box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
@@ -260,24 +244,12 @@ footer a {
     text-align: justify;
     list-style-type: square;
 }
-
 /* Visi & Misi End */
 
 /* Struktur Start */
-.organisasi {
-    height: 70px;
-    padding: 20px;
-    margin: 5% 35%;
-    font-size: 20px;
-    text-align: center;
-    font-family: var(--mainFont);
-    border-radius: 5px 5px 5px 5px;
-    background-color: var(--bg-four);
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
-}
-
+ 
 .struktur {
-    margin: 5%;
+    margin: 5% 0%;
     display: flex;
     justify-content: center;
 }
@@ -298,9 +270,32 @@ footer a {
     padding: 10px 16px;
     background-color: var(--bg-four);
 }
+ 
 
+.struktur {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 20%;
+    margin: 0% 5%;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.profile:hover {
+    box-shadow: 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-txt {
+    text-align: center;
+    padding: 10px 16px;
+    background-color: var(--bg-four);
+}
 /* Struktur End */
 
+/* Footer Start */
 .btn-contact {
     height: 60px;
     border: none;
@@ -321,131 +316,29 @@ footer a {
 .col4 a {
     color: #fff;
 }
-
 /* Footer End */
 
 /* Sejarah Start */
-.sejarah {
+#sejarah {
     width: 90%;
     height: auto;
     margin: 5%;
     padding: 2%;
     display: flex;
-    border-radius: 5px 5px 5px 5px;
-    background-color: var(--bg-four);
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.sejarah-teks {
-    width: 60%;
+#sejarah p {
+    font-size: 19px;
     height: auto;
-    margin-right: 1%;
-    padding: 50px 20px;
-    box-sizing: border-box;
-    font-family: var(--mainFont);
+    font-family: var(--bodyFont);
 }
-
-.sejarah-teks .teks1 {
-    font-size: 20px;
-
-}
-
-.sejarah-teks .teks2 {
-    font-size: 14px;
-    text-align: justify;
-
-}
-
-.sejarah-gambar {
-    width: 40%;
-    height: auto;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.sejarah-gambar img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-}
-
 /* Sejarah End */
-
-/* Visi & Misi Start */
-.visimisi {
-    width: 94%;
-    height: auto;
-    margin: 10% 3%;
-    display: flex;
-    font-family: var(--mainFont);
-}
-
-.vm {
-    width: 40%;
-    height: auto;
-    padding: 50px;
-    margin: 0% 5%;
-    border-radius: 5px 5px 5px 5px;
-    background-color: var(--bg-four);
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.vm .vm1 {
-    font-size: 20px;
-    text-align: center;
-}
-
-.vm li {
-    margin-bottom: 10px;
-    text-align: justify;
-    list-style-type: square;
-}
-
-/* Visi & Misi End */
-
-/* Struktur Start */
-.organisasi {
-    height: 70px;
-    padding: 20px;
-    margin: 5% 35%;
-    font-size: 20px;
-    text-align: center;
-    font-family: var(--mainFont);
-    border-radius: 5px 5px 5px 5px;
-    background-color: var(--bg-four);
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.struktur {
-    margin: 5%;
-    display: flex;
-    justify-content: center;
-}
-
-.profile {
-    width: 20%;
-    margin: 0% 5%;
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
-}
-
-.profile:hover {
-    box-shadow: 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.profile-txt {
-    text-align: center;
-    padding: 10px 16px;
-    background-color: var(--bg-four);
-}
-
-/* Struktur End */
 
 .btn-contact {
     height: 60px;
     border: none;
     color: #d8e3e7;
-    background-color: #132C33;
+    background-color: var(--bg-master);
     
     /* font */
     font-size: 1.3em;
@@ -464,7 +357,7 @@ footer a {
     padding: 100px 0px;
 }
 .btn-home {
-    font-family: 'Inter';
+    font-family: var(--bodyFont);
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
